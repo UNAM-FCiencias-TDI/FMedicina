@@ -1,0 +1,87 @@
+{% load staticfiles %}
+<html>
+        <head>
+            <title>Django Girls blog</title>
+            <link href="http://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        </head>
+        
+        <body>
+        <div class="page-header">
+        <a href="{% url 'blog.views.post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Facultad de medicina Unam</a></h1>
+        </div>
+        <hr width="80%">
+        
+        <center><table border="0" width = 80% bgcolor="white" cellpadding="1" cellspacing="1">
+            <tr>
+                <td width=25%><center><a class="pure-button" href="/blog/historia"><h4>HISTORIA</h4></a></center></td>
+                <td width=25%><center><a class="pure-button" href="/blog/myv"><h4>MISI&Oacute;N Y VISI&Oacute;N</h4></a></center></td>
+                <td width=25%><center><a class="pure-button" href="/blog/departamentos"><h4>DEPARTAMENTOS</h4></a></center></td>
+            </tr>
+        </table></CENTER>
+    <hr width="80%">
+
+    <center><h3> DEPARTAMENTOS</h3></center>
+    <HR width="80%">
+    <br>
+    <br>
+
+    <center><table border="2" cellpadding="4" cellspacing="4" bgcolor="#D8D8D8" style="text-align:center;">
+            <tr>
+                <td><center><img src="{% static 'img/anatomia.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+                <td><center><img src="{% static 'img/biologia.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+            </tr>
+            <tr>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/anatomia"><h4>ANATOMIA</h4></a></center></td>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/biologia"><h4>BIOLOGIA CELULAR Y TISULAR</h4></a></center></td>
+            </tr>
+            <tr>
+                <td><center><img src="{% static 'img/bioquimica.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+                <td><center><img src="{% static 'img/cirugia.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+            </tr>
+            <tr>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/bioquimica"><h4>BIOQUIMICA</h4></a></center></td>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/cirugia"><h4>CIRUGIA</h4></a></center></td>
+            </tr>
+            <tr>
+                <td><center><img src="{% static 'img/embriologia.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+                <td><center><img src="{% static 'img/farmacologia.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+            </tr>
+            <tr>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/embriologia"><h4>EMBRIOLOGIA</h4></a></center></td>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/farmacologia"><h4>FARMACOLOGIA</h4></a></center></td>
+            </tr>
+            <tr>
+                <td><center><img src="{% static 'img/fisiologia.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+                <td><center><img src="{% static 'img/filosofia.gif' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+            </tr>
+            <tr>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/fisiologia"><h4>FISIOLOGIA</h4></a></center></td>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/filosofia"><h4>HISTORIA Y FILOSOFIA DE LA MEDICINA</h4></a></center></td>
+            </tr>
+            <tr>
+                <td><center><img src="{% static 'img/informatica.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+                <td><center><img src="{% static 'img/ciencias.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+            </tr>
+            <tr>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/informatica"><h4>INFORMATICA BIOMEDICA</h4></a></center></td>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/ciencias"><h4>INTEGRACION DE CIENCIAS MEDICAS</h4></a></center></td>
+            </tr>
+            <tr>
+                <td><center><img src="{% static 'img/microbiologia.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+                <td><center><img src="{% static 'img/psiquiatria.jpg' %}" alt="My image" WIDTH=500 HEIGHT=350 /></center></td>
+            </tr>
+            <tr>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/microbiologia"><h4>MICROBIOLOGIA Y PARASITOLOGIA</h4></a></center></td>
+                <td bgcolor="white"><center><a class="pure-button" href="/blog/psiquiatria"><h4>PSIQUIATRIA Y SALUD MENTAL</h4></a></center></td>
+            </tr>
+        </table></center>
+
+
+    <br>
+    <br>
+  </body>
+    </html>
